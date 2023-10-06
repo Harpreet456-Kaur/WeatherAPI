@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">WeatherAPI</string>
+    <string name="day"></string>
+    <string name="date"></string>
+    <string name="city">city</string>
+    <string name="temp">0</string>
+    <string name="degree">o</string>
+    <string name="feel">Real feel</string>
+    <string name="humidity">Humidity</string>
+    <string name="feelNum" />
+    <string name="humidityNum">\n</string>
+    <string name="wind">Wind</string>
+    <string name="windNum" />
+    <string name="pressure">Pressure</string>
+    <string name="pressureNum" />
+    <string name="Get">GET</string>
+    <string name="lang">Longitude</string>
+    <string name="lat">Latitude</string>
+    <string name="Go">GO_NEXT</string>
+    <string name="ground">Ground_level</string>
+    <string name="sea">Sea_level</string>
+    <string name="seaNum" />
+    <string name="groundNum" />
+    <string name="description">Description</string>
+    <string name="sunrise">Sun_Rise</string>
+    <string name="sunset">Sun_Set</string>
+    <string name="setNum" />
+    <string name="current">Current date and time</string>
+    <string name="currentCity">City</string>
+    <string name="feelUnit">o</string>
+</resources>

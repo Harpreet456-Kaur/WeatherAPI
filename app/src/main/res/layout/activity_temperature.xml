@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".Temperature">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/designing"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/currentTime"
+                android:padding="2dp"
+                android:text="@string/day"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/currentCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/currentCity"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/currentCity"
+                android:layout_alignParentRight="true"
+                android:padding="2dp"
+                android:text="@string/city"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/day"
+                android:layout_marginTop="5dp"
+                android:text="@string/temp"
+                android:textAlignment="center"
+                android:textSize="150sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/city"
+                android:layout_marginHorizontal="210dp"
+                android:text="@string/degree"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feel"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/temp"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:text="@string/feel"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feelNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temp"
+                android:layout_marginTop="50dp"
+                android:padding="2dp"
+                android:text="@string/feelNum"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/feelUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="35dp"
+                android:padding="2dp"
+                android:text="@string/feelUnit"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/temp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/feel"
+                android:padding="2dp"
+                android:text="@string/humidity"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/humidityNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@+id/feel"
+                android:padding="2dp"
+                android:text="@string/humidityNum"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:id="@+id/pressure"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/feel"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:text="@string/pressure"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pressureNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feel"
+                android:layout_marginTop="50dp"
+                android:padding="2dp"
+                android:text="@string/pressureNum"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/wind"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/humidity"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/feel"
+                android:padding="2dp"
+                android:text="@string/wind"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/windNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/humidity"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@+id/feel"
+                android:padding="2dp"
+                android:text="@string/windNum"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/ground"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/pressure"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:text="@string/ground"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/groundNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pressure"
+                android:layout_marginTop="50dp"
+                android:padding="2dp"
+                android:text="@string/groundNum"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/sea"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/wind"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/feel"
+                android:padding="2dp"
+                android:text="@string/sea"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/seaNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wind"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@+id/feel"
+                android:padding="2dp"
+                android:text="@string/seaNum"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/sunRise"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/ground"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:text="@string/sunrise"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/riseImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/ground"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/sunrise" />
+
+            <TextView
+                android:id="@+id/riseNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ground"
+                android:layout_marginTop="80dp"
+                android:padding="2dp"
+                android:text="@string/groundNum"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/sunSet"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/sea"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/feel"
+                android:padding="2dp"
+                android:text="@string/sunset"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/setImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/ground"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/feel"
+                android:src="@drawable/sunset" />
+
+            <TextView
+                android:id="@+id/setNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sea"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="80dp"
+                android:layout_toRightOf="@+id/feel"
+                android:padding="2dp"
+                android:text="@string/setNum"
+                android:textSize="22sp" />
+
+            <ProgressBar
+                android:id="@+id/bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
